@@ -28,9 +28,9 @@
 
 许多地方都声称足球比赛的进球符合泊松过程（或者声称进球间的时间间隔符合指数分布），如[这篇博客](https://allendowney.github.io/ThinkBayes2/chap08.html)，但他们没有数据来支持他们的观点。
 
-然后，在谷歌学术上，我找到了[一篇有数据支持的论文](https://pubsonline.informs.org/doi/abs/10.1287/ited.3.2.64)。作者统计了1990-2002四届世界杯的数据，发现进球间的时间间隔的分布与指数分布极其相似。但我觉得，只用四届世界杯的数据也太少了点。如果我用所有的世界杯的数据呢？一百年来，世界杯一共也就几千个进球，FIFA应该会保存这些珍贵的数据吧？
+然后，在谷歌学术上，我找到了[一篇有数据支持的论文](https://pubsonline.informs.org/doi/abs/10.1287/ited.3.2.64)。作者统计了1990-2002四届世界杯的数据，发现进球间的时间间隔的分布与指数分布极其相似。但我觉得，只用四届世界杯的数据也太少了点。如果我用所有世界杯的数据呢？一百年来，世界杯一共也就几千个进球，FIFA应该会保存这些珍贵的数据吧？
 
-随后，我在Google上使用`site:www.kaggle.com goal data of FIFA World Cup`搜索，找到了[1930-2022世界杯的全部进球数据](https://www.kaggle.com/datasets/jahaidulislam/fifa-world-cup-all-goals-1930-2022-dataset)。我同样发现，进球间的时间间隔的分布和指数分布极其相似。
+随后，我在Google上使用`site:www.kaggle.com goal data of FIFA World Cup`进行搜索，找到了[1930-2022世界杯的全部进球数据](https://www.kaggle.com/datasets/jahaidulislam/fifa-world-cup-all-goals-1930-2022-dataset)。我同样发现，进球间的时间间隔的分布和指数分布极其相似。
 
 <img src = "/figures/histogram_connect two adjacent games.jpg" width=100% align="center">
 
