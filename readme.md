@@ -18,7 +18,7 @@
 
 随后，我在Google上使用`site:www.kaggle.com goal data of FIFA World Cup`搜索，找到了[1930-2022世界杯的全部进球数据](https://www.kaggle.com/datasets/jahaidulislam/fifa-world-cup-all-goals-1930-2022-dataset)。我同样发现，进球间的时间间隔的分布和指数分布极其相似。
 
-![histogram_connect two adjacent games](F:\Desktop\soccer\histogram_connect two adjacent games.jpg)
+<img src = "/figures/histogram_connect two adjacent games.jpg" width=100% align="center">
 
 ---
 
