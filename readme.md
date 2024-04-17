@@ -1,49 +1,49 @@
-# 下一分钟，足球场上将发生什么？
+# What Will Happen on the Soccer Field in the Next Minute?
 
-足球里有一句名言：足球是圆的。
+There is a famous saying in soccer: "The ball is round."
 
-意思是，在足球里，什么都有可能发生。
+This means that anything is possible in soccer.
 
-这句话背后隐藏着一个深刻的数学模型。
+Hidden behind this phrase is a profound mathematical model.
 
----
+------
 
-统计学中，有一个被称为“随机过程”的子学科。
+In statistics, there is a sub-discipline called "stochastic processes."
 
-在这个领域里，有这么一种过程，它满足一种性质：未来只和现在有关，和过去无关。
+In this field, there exists a type of process that satisfies a property: the future depends only on the present and is independent of the past.
 
-听起来是不是很像足球比赛？
+Doesn't this sound very much like a soccer match?
 
-这种过程被称为马尔可夫过程，这种性质被称为马尔可夫性。
+This process is called a Markov process, and this property is known as Markovianity.
 
-我们知道，足球比赛中的进球是一个累加过程，从0到1，再到2，以此类推。
+We know that scoring in soccer is an accumulative process, going from 0 to 1, then to 2, and so forth.
 
-这种累加过程被统计学家称为计数过程。而有马尔可夫性的计数过程被称为泊松过程。
+Statisticians refer to this accumulative process as a counting process. A counting process that has Markovian properties is called a Poisson process.
 
-你可能会问，足球比赛中的进球是否真的满足马尔可夫性，也就是说，下一分钟有没有进球真的只取决于现在的状态，而和过去无关吗？
+You might wonder whether goals in soccer truly exhibit Markovian properties, meaning whether the occurrence of a goal in the next minute really depends only on the current state and not on the past.
 
----
+------
 
-我一直听闻，足球中的进球满足泊松过程。
+I have often heard that scoring in soccer follows a Poisson process.
 
-要想知道它是不是满足泊松过程，只需要检查进球间的时间间隔是否满足指数分布。容易证明，两者是等价的。
+To determine if it truly follows a Poisson process, one only needs to check if the intervals between goals follow an exponential distribution. It is easy to prove that the two are equivalent.
 
-2023年7月14日上午，我终于去谷歌上进行了一番搜索。
+On the morning of July 14, 2023, I finally conducted a search on Google.
 
-很多地方都声称足球中的进球满足泊松过程（或者声称进球间的时间间隔满足指数分布），比如[这篇博客](https://allendowney.github.io/ThinkBayes2/chap08.html)，但是却没有数据支持自己的说法。
+Many sources claim that scoring in soccer follows a Poisson process (or that the intervals between goals follow an exponential distribution), such as [this blog](https://allendowney.github.io/ThinkBayes2/chap08.html), but they do not support their claims with data.
 
-在谷歌学术上，我找到[一篇有数据的论文](https://pubsonline.informs.org/doi/abs/10.1287/ited.3.2.64)。文中，作者统计了1990-2002的四届世界杯的数据，发现进球间的时间间隔的分布和指数分布极其相似。但我觉得，只用四届世界杯的数据也太少了点。如果我用所有世界杯的数据呢？一百年来，世界杯一共也就几千个进球，FIFA应该会保存这些珍贵的数据吧？
+On Google Scholar, I found [a data-supported paper](https://pubsonline.informs.org/doi/abs/10.1287/ited.3.2.64). The authors analyzed data from four World Cups between 1990 and 2002, finding that the distribution of intervals between goals was extremely similar to an exponential distribution. However, I think using data from only four World Cups is somewhat limited. What if I used data from all World Cups? Over a century, there have been just a few thousand goals at the World Cup, and FIFA should have preserved this precious data, right?
 
-随后，我在Google上使用`site:www.kaggle.com goal data of FIFA World Cup`进行搜索，在kaggle上找到了[1930-2022世界杯的全部进球的数据](https://www.kaggle.com/datasets/jahaidulislam/fifa-world-cup-all-goals-1930-2022-dataset)。
+Subsequently, I searched on Google using `site:www.kaggle.com goal data of FIFA World Cup` and found [data on all goals from the 1930 to 2022 World Cups](https://www.kaggle.com/datasets/jahaidulislam/fifa-world-cup-all-goals-1930-2022-dataset) on Kaggle.
 
-之后，我分析了数据，发现进球间的时间间隔的分布和指数分布极其相似。
+After analyzing the data, I found that the distribution of intervals between goals was extremely similar to an exponential distribution.
 
 <img src = "/figures/histogram_connect two adjacent games.jpg" width=100% align="center">
 
----
+------
 
-于是乎，**至少在足球场上，未来真的只在乎现在，而不念过往。**
+Thus, at least on the soccer field, the future really does care only about the present, and not the past.
 
-领先的一方不要得意，落后的一方不要放弃。
+The leading team should not be complacent, and the trailing team should not give up.
 
-如果人生真的是足球，那该多好！
+If life were really like soccer, how wonderful that would be!
